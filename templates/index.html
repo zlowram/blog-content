@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{.Config.Title}}</title>
+        <link href="/css/style.css" rel="stylesheet">
+        <link href="/css/prism.css" rel="stylesheet" />
+    </head>
+    <body>
+
+        <div class="container">
+
+            <div class="site-nav">
+
+            </div><!-- /.site-nav -->
+
+            <div class="site-header">
+                <pre>
+$$\   $$\                                $$\               $$\                                   
+$$$\  $$ |                               $$ |              $$ |                                  
+$$$$\ $$ | $$$$$$\   $$$$$$\   $$$$$$\ $$$$$$\    $$$$$$$\ $$$$$$$\      $$$$$$\$$$$\   $$$$$$\  
+$$ $$\$$ |$$  __$$\ $$  __$$\  \____$$\\_$$  _|  $$  _____|$$  __$$\     $$  _$$  _$$\ $$  __$$\ 
+$$ \$$$$ |$$ /  $$ |$$ /  $$ | $$$$$$$ | $$ |    $$ /      $$ |  $$ |    $$ / $$ / $$ |$$$$$$$$ |
+$$ |\$$$ |$$ |  $$ |$$ |  $$ |$$  __$$ | $$ |$$\ $$ |      $$ |  $$ |    $$ | $$ | $$ |$$   ____|
+$$ | \$$ |\$$$$$$  |$$$$$$$  |\$$$$$$$ | \$$$$  |\$$$$$$$\ $$ |  $$ |<span class="title-dot">$$\</span> $$ | $$ | $$ |\$$$$$$$\ 
+\__|  \__| \______/ $$  ____/  \_______|  \____/  \_______|\__|  \__|\<span class="title-dot">__|</span>\__| \__| \__| \_______|
+                    $$ |                                                                         
+                    $$ |                                                                         
+                    \__|                                                                         
+                </pre>
+            </div><!-- /.site-header -->
+
+            <div class="row">
+                <div class="nav-bar">
+                    --| <a href="/">Home</a> |--
+                </div><!-- /.nav-bar -->
+
+                {{range .Posts}}
+                <div class="blog-post">
+					<h2 class="post-title"><a href="{{.Permalink}}">{{.Title}}</a></h2>
+                    <p class="post-meta">by {{.Author}} on {{.Date.Month}} {{.Date.Day}}, {{.Date.Year}}</p>
+                    {{.Preview}}
+                    <p class="read-more"><a href="{{.Permalink}}">Read more</a>
+                </div><!-- /.blog-post -->
+                {{end}}
+
+                <div class="paginator">
+                    {{if .PreviousPage}}
+                    <a class="newer-page" href="{{.PreviousPage}}">&lt;&lt; Newer posts</a>
+                    {{end}}
+                    {{if .NextPage}}
+                    <a class="older-page" href="{{.NextPage}}">Older posts &gt;&gt;</a>
+                    {{end}}
+                </div>
+
+            </div><!-- /.row -->
+
+        </div><!-- /.container -->
+        <div class="footer">
+            Powered by <a href="http://github.com/zlowram/blgo">blgo</a> 
+        </div><!-- /.footer -->
+
+        <!-- Prism.js -->
+        <script src="/js/prism.js"></script>
+    </body>
+</html>
