@@ -7,6 +7,9 @@ PostsPerPage = 4
 # Disqus parameters
 DisqusShortname = "nopatch"
 
+# Google Analytics
+GoogleAnalyticsID = "UA-93249230-1"
+
 # Directories
 Posts = "posts" # Directory containing the posts
 Templates = "templates" # Directory containing the templates
