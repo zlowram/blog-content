@@ -21,7 +21,7 @@ a:hover {
 }
 
 .site-header pre {
-    	margin-left: -50px;
+	margin-left: -50px;
 	line-height: normal;
 }
 
@@ -49,6 +49,12 @@ a:hover {
 .post-meta {
     margin: 0 0 30px 0;
     color: #9a9693;
+}
+
+h2 {
+    font-size: 1.2em;
+    color: #E18A07;
+    text-align: left;
 }
 
 .read-more {
