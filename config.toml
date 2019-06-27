@@ -1,5 +1,5 @@
 # Site parameters
-Title = "nopatch.me" # Title of your site
+Title = "zlowram's blog" # Title of your site
 Description = "Yet another blog of another infosec enthusiast. CTFs, reversing, exploiting, coding and more." # Description for your site
 Keywords = "hacking, CTF, write-up, exploiting, reversing"
 PreviewLength = 30 # Length of the post preview in the index (number of words)
