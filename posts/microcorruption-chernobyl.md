@@ -102,7 +102,7 @@ SZ: Size of current block with LSB indicating if used or not (the size saved her
 
 The Free function can be written in C as follows:
 
-```C
+```markup
 struct chunk_header_struct {
   uint16 bk;
   uint16 fw;
