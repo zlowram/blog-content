@@ -13,5 +13,6 @@ GoogleAnalyticsID = "UA-93249230-1"
 
 # Directories
 Posts = "posts" # Directory containing the posts
+Images = "img" # Directory containing the images used in the posts 
 Templates = "templates" # Directory containing the templates
 Public = "static" # Directory where the generated static site will be stored
