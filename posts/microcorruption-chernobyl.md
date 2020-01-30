@@ -48,7 +48,7 @@ The reversing of the `create_hash_table` function reveals how that data structur
 +---------------+ 0x2
 |       3       |     Number of bins (2^3)
 +---------------+ 0x4
-|	      5       |     Max. entries per bin
+|	      5     |     Max. entries per bin
 +---------------+ 0x6
 |      ptr      |------------------------------------------->+-----------------------+
 +---------------+ 0x8                                        | 0 2 4 6 8 10 12 14 16 | list of ptr

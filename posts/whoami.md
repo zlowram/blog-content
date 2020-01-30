@@ -21,7 +21,7 @@ Comments: disabled
 * Cooking
 * Adventure bikes
 * Racing drones
-* Player Unknown's Battleground (pretty bad player tbh)
+* PlayerUnknown's Battleground (pretty bad player tbh)
 * Switching Desktop Environments / Window Managers compulsively
 
 ## Also on
